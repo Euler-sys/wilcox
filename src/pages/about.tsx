@@ -144,6 +144,8 @@ const About = () => {
               Chief Executive Officer
             </h3>
 
+            <p className="text-extrabold  mb-2"> James Hutchinson (CEO) </p>  
+
             <p className="text-sm text-gray-600">
               Leads Wilcox Oil Company with a vision for innovation, safety,
               and large-scale infrastructure development.
@@ -165,6 +167,7 @@ const About = () => {
             <h3 className="text-lg font-semibold text-gray-900 mb-1">
               Senior Project Engineer
             </h3>
+            <p className="text-extrabold  mb-2"> Edwin Warren </p>  
 
             <p className="text-sm text-gray-600">
               Specializes in construction planning, execution, and field operations
@@ -187,6 +190,9 @@ const About = () => {
             <h3 className="text-lg font-semibold text-gray-900 mb-1">
               Subsea & Systems Engineer
             </h3>
+
+                        <p className="text-extrabold  mb-2"> Shore Dennis </p>  
+
 
             <p className="text-sm text-gray-600">
               Focuses on infrastructure systems, equipment reliability,
