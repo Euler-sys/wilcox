@@ -9,6 +9,7 @@ import {
   Phone,
   MapPin,
 } from "lucide-react";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -81,6 +82,10 @@ const Footer = () => {
 
               <li className="flex items-center space-x-2">
                 <Phone size={16} />
+                <span>+1 (570) 656-9728</span>
+              </li>
+              <li className="flex items-center space-x-2">
+                <FaWhatsapp size={16} />
                 <span>+1 (570) 656-9728</span>
               </li>
 
