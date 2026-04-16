@@ -1,5 +1,5 @@
 import { Phone, MapPin } from "lucide-react";
-
+import { FaEnvelope } from "react-icons/fa";
 const Contact = () => {
   return (
     <main className="pt-16">
@@ -71,6 +71,24 @@ const Contact = () => {
 
               <div className="mt-6 h-1 w-12 bg-amber-600 mx-auto rounded-full opacity-30 group-hover:opacity-100 transition" />
             </div>
+           <div className="group rounded-xl border bg-white shadow-sm hover:shadow-lg transition p-8 text-center">
+  <div className="flex items-center justify-center w-14 h-14 rounded-full bg-amber-600/10 mx-auto mb-5">
+    <FaEnvelope className="w-7 h-7 text-amber-600" />
+  </div>
+
+  <h3 className="text-lg font-semibold text-gray-900 mb-3">
+    Email
+  </h3>
+
+  <p className="text-gray-900 font-medium text-lg">
+wilcoxoilcompany@gmail.com  </p>
+
+  <p className="text-sm text-gray-500 mt-2">
+    We respond within 24 hours
+  </p>
+
+  <div className="mt-6 h-1 w-12 bg-amber-600 mx-auto rounded-full opacity-30 group-hover:opacity-100 transition" />
+</div>
 
           </div>
         </div>

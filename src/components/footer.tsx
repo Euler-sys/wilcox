@@ -5,7 +5,7 @@ import {
   Linkedin,
   Twitter,
   Facebook,
-//   Mail,
+  Mail,
   Phone,
   MapPin,
 } from "lucide-react";
@@ -84,10 +84,10 @@ const Footer = () => {
                 <span>+1 (570) 656-9728</span>
               </li>
 
-              {/* <li className="flex items-center space-x-2">
+              <li className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span>info@wilcoxoil.com</span>
-              </li> */}
+                <span>wilcoxoilcompany@gmail.com</span>
+              </li>
 
               <li className="flex items-start space-x-2">
                 <MapPin size={16} className="mt-1" />
