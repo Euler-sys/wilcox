@@ -1,85 +1,143 @@
-import { FaFacebookF, FaTwitter,  FaPhone, FaEnvelope } from "react-icons/fa";
-import logo from '../assets/LOGO-removebg-preview.png'
+import { Link } from "react-router-dom";
+import logo from "../assets/logo.png";
+
+import {
+  Linkedin,
+  Twitter,
+  Facebook,
+//   Mail,
+  Phone,
+  MapPin,
+} from "lucide-react";
+
 const Footer = () => {
   return (
-    <footer className="bg-[#ccc] text-white py-10">
-      <div className="max-w-6xl mx-auto px-6 lg:px-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
-          
-          {/* About United Way Benefits */}
-          <div>
-            <img src={logo} width="200" className="m-auto" />
-            <p className="text-black mt-3 text-sm">
-              Empowering individuals and families by providing financial assistance, 
-              health services, and community support programs.
+    <footer className="bg-black text-amber-400">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          {/* Brand */}
+          <div className="space-y-4">
+            <div className="flex items-center space-x-3">
+              <img
+                src={logo}
+                alt="Wilcox Oil Company"
+                className="w-10 h-10"
+              />
+              <div>
+                <h3 className="font-bold text-lg text-amber-400">
+                  Wilcox Oil
+                </h3>
+                <p className="text-sm text-amber-300">
+                  Construction & Energy
+                </p>
+              </div>
+            </div>
+
+            <p className="text-amber-200 text-sm leading-relaxed">
+              Wilcox Oil Company delivers world-class construction and energy
+              solutions, building critical infrastructure with safety,
+              precision, and innovation.
             </p>
           </div>
 
-          {/* Navigation Links */}
+          {/* Quick Links */}
           <div>
-            <h3 className="text-lg font-semibold text-blue-800 ">Quick Links</h3>
-            <ul className="mt-3 space-y-2 text-black">
-              <li><a href="#" className="hover:text-blue-800 transition">Home</a></li>
-              <li><a href="#" className="hover:text-blue-800 transition">About Us</a></li>
-              <li><a href="#" className="hover:text-blue-800 transition">Programs</a></li>
-              <li><a href="#" className="hover:text-blue-800 transition">Resources</a></li>
-              <li><a href="#" className="hover:text-blue-800 transition">Contact</a></li>
+            <h4 className="font-semibold text-lg mb-4 text-amber-400">
+              Quick Links
+            </h4>
+            <ul className="space-y-2">
+              <li>
+                <Link to="/contact" className="text-amber-200 hover:text-amber-400 text-sm">
+                  About Us
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-amber-200 hover:text-amber-400 text-sm">
+                  Services
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-amber-200 hover:text-amber-400 text-sm">
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link to="/contact" className="text-amber-200 hover:text-amber-400 text-sm">
+                  Careers
+                </Link>
+              </li>
             </ul>
           </div>
 
-          {/* Contact Information
+          {/* Contact */}
           <div>
-            <h3 className="text-lg font-semibold text-blue-800">Contact Us</h3>
-            <div className="text-black mt-3 text-sm flex flex-col justify-center ">
-                <div className="flex gap-2  "> <FaLocationArrow/> <p>123 Hope Street, New York, NY 10001</p></div>
-                <div className="flex gap-2  "> <FaPhone/> <p>(123) 456-7890 </p></div>
-                <div className="flex gap-2  "> <FaEnvelope/> <p>support@unitedwaybenefits.org</p></div>
-             
-            
-             
-            </div>
-          </div> */}
-        </div>
+            <h4 className="font-semibold text-lg mb-4 text-amber-400">
+              Contact Info
+            </h4>
 
-        {/* Social Media & Newsletter Section */}
-        <div className="mt-8 flex flex-col md:flex-row items-center justify-between text-center">
-          
-          {/* Social Media Icons */}
-          <div className="flex space-x-4 mb-4 md:mb-0">
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition">
-              <FaFacebookF className="text-white text-lg" />
-            </a>
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition">
-              <FaTwitter className="text-white text-lg" />
-            </a>
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition">
-              <FaPhone className="text-white text-lg" />
-            </a>
-            <a href="#" className="p-3 bg-gray-800 rounded-full hover:bg-blue-500 transition">
-              <FaEnvelope className="text-white text-lg" />
-            </a>
+            <ul className="space-y-4 text-sm text-amber-200">
+
+              <li className="flex items-center space-x-2">
+                <Phone size={16} />
+                <span>+1 (570) 656-9728</span>
+              </li>
+
+              {/* <li className="flex items-center space-x-2">
+                <Mail size={16} />
+                <span>info@wilcoxoil.com</span>
+              </li> */}
+
+              <li className="flex items-start space-x-2">
+                <MapPin size={16} className="mt-1" />
+                <span>PO BOX 580 RULE, TX 79547</span>
+              </li>
+
+            </ul>
           </div>
 
-          {/* Newsletter Subscription */}
-          <div className="mt-4 md:mt-0">
-            <h3 className="text-lg font-semibold text-blue-800">Subscribe to Our Newsletter</h3>
-            <div className="flex mt-3">
-              <input 
-                type="email" 
-                placeholder="Enter your email" 
-                className="px-4 py-2 rounded-l-md text-gray-900 focus:outline-none"
-              />
-              <button className="bg-black px-4 py-2 rounded-r-md hover:bg-blue-800 transition">
-                Subscribe
-              </button>
+          {/* Socials */}
+          <div>
+            <h4 className="font-semibold text-lg mb-4 text-amber-400">
+              Follow Us
+            </h4>
+
+            <div className="flex space-x-4">
+
+              <a
+                href="#"
+                className="bg-gray-900 hover:bg-amber-600 p-2 rounded-full transition text-amber-300 hover:text-black"
+              >
+                <Linkedin size={18} />
+              </a>
+
+              <a
+                href="#"
+                className="bg-gray-900 hover:bg-amber-600 p-2 rounded-full transition text-amber-300 hover:text-black"
+              >
+                <Twitter size={18} />
+              </a>
+
+              <a
+                href="#"
+                className="bg-gray-900 hover:bg-amber-600 p-2 rounded-full transition text-amber-300 hover:text-black"
+              >
+                <Facebook size={18} />
+              </a>
+
             </div>
           </div>
+
         </div>
 
-        {/* Copyright */}
-        <p className="text-gray-800 text-center text-sm mt-6">
-          &copy; {new Date().getFullYear()} United Way Benefits. All rights reserved.
-        </p>
+        {/* Bottom */}
+        <div className="border-t border-amber-900 mt-8 pt-8 text-center">
+          <p className="text-amber-300 text-sm">
+            © 2026 Wilcox Oil Company. All rights reserved.
+          </p>
+        </div>
+
       </div>
     </footer>
   );
